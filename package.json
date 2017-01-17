@@ -1,6 +1,6 @@
 {
   "name": "@jacobmarshall/serviceworker-storage",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "localStorage like storage in ServiceWorker",
   "homepage": "https://github.com/jacobmarshall-pkg/serviceworker-storage",
   "repository": {
