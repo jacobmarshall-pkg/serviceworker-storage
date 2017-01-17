@@ -42,8 +42,8 @@ remove item by key.
 storage.removeItem(key);
 ```
 
-## clean()
-clean storage.
+## clear()
+clear storage.
 ```javascript
-storage.clean();
+storage.clear();
 ```
