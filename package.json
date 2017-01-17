@@ -1,24 +1,26 @@
 {
-  "name": "serviceworker-storage",
+  "name": "@jacobmarshall/serviceworker-storage",
   "version": "0.0.0",
   "description": "localStorage like storage in ServiceWorker",
-  "homepage": "https://github.com/RyotaSugawara/serviceworker-storage",
+  "homepage": "https://github.com/jacobmarshall-pkg/serviceworker-storage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RyotaSugawara/serviceworker-storage"
+    "url": "https://github.com/jacobmarshall-pkg/serviceworker-storage"
   },
   "main": "lib/index.js",
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
   "directories": {
     "test": "test/"
   },
   "author": "ryo_suga",
+  "contributors": [
+    "Jacob Marshall <git@jacobmarshall.co> (https://jacobmarshall.co)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RyotaSugawara/serviceworker-storage/issues"
+    "url": "https://github.com/jacobmarshall-pkg/serviceworker-storage/issues"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir lib --source-maps inline",
@@ -26,7 +28,9 @@
     "test": "NODE_ENV=development karma start",
     "prepublish": "npm run test && npm run build"
   },
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-plugin-espower": "^2.3.1",
